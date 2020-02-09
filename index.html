@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Новый сайт</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <main style="width: 100%; height: 100vh;">
+      <div class="d-flex justify-content-center align-items-center hero">
+        <img src="img/logo.svg" class="logo" alt="">
+      </div>
+      <div class="flex-wrap">
+        <div class="item">
+          <i class="line"></i>
+          <div class="overlay"></div>
+          <div class="title">Наружная реклама</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path
+              fill="#fff"
+              d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+            />
+          </svg>
+        </div>
+        <div class="item">
+          <i class="line"></i>
+          <div class="overlay"></div>
+          <div class="title">Персонажи</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path
+              fill="#fff"
+              d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+            />
+          </svg>
+        </div>
+        <div class="item">
+          <i class="line"></i>
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path
+              fill="#fff"
+              d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+            />
+          </svg>
+        </div>
+        <div class="item">
+          <i class="line"></i>
+          <div class="overlay"></div>
+          <div class="title">Заголовок</div>
+          <svg class="icon" viewbox="0 0 28 25">
+            <path
+              fill="#fff"
+              d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+  </body>
+</html>
